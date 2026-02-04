@@ -1,0 +1,26 @@
+# Gems installées localement
+/vendor/bundle
+
+# Fichiers Ruby inutiles
+*.log
+
+# Configuration Google (NE JAMAIS COMMIT)
+config/client_secret.json
+config/*.json
+config/*.yaml
+
+# Données générées par le programme
+db/*.csv
+db/*.json
+db/*.txt
+
+# RSpec
+/.rspec
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Éditeurs
+.idea/
+.vscode/
