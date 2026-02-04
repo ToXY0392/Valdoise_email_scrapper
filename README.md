@@ -1,8 +1,8 @@
-📌 Valdoise Email Scrapper
+# 📌 Valdoise Email Scrapper
 
 A Ruby application that scrapes email addresses from all city halls in the Val-d’Oise region and saves them in multiple formats (JSON, CSV, Google Spreadsheet).
 
-🎯 Project Goal
+## 🎯 Project Goal
 
 This project automatically extracts the email addresses of all Val-d’Oise town halls from a public online directory, then saves the collected data in:
 
@@ -14,15 +14,16 @@ Google Spreadsheet → created or updated via Google APIs
 
 The entire project is written using Object-Oriented Programming (OOP) and demonstrates how to scrape data and persist it in different storage formats.
 
-⚙️ Installation
-1️⃣ Install Ruby dependencies
+## ⚙️ Installation
+### 1️⃣ Install Ruby dependencies
+```ruby
 bundle install
-
+```
 
 Main gems used:
 nokogiri, open-uri, json, csv, google_drive.
 
-🔑 Google API Configuration (Spreadsheet Export)
+### 🔑 Google API Configuration (Spreadsheet Export)
 
 To enable Google Spreadsheet saving, you must configure the Google Drive & Sheets APIs:
 
@@ -48,12 +49,12 @@ Open it, grant access, copy the authorization code, and paste it back into the t
 
 The spreadsheet ID will then be saved automatically for future use.
 
-▶️ Usage
+### ▶️ Usage
 
 Run the program:
-
+```ruby
 ruby app.rb
-
+```
 
 You will be presented with an interactive menu:
 
@@ -74,7 +75,7 @@ or "email_not_found" if none is detected
 
 or "email_error" in case of scraping issues
 
-🧪 Tests (RSpec)
+## 🧪 Tests (RSpec)
 
 Run tests with:
 
@@ -106,7 +107,7 @@ Your Google Drive account is full.
 
 Credentials do not match the Google Cloud project you configured.
 
-✔️ Conclusion
+### ✔️ Conclusion
 
 This project demonstrates:
 
